@@ -8,8 +8,8 @@
     <label for="exampleInputEmail1" class="form-label">Tuoi</label>
     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tuoi">
   </div>
-  <h5><?php if(isset($product)){
-      echo $product[0];
+  <h5 style="color: red"><?php if(isset($error['ct'])){
+      echo $error['ct'];
       } ?></h5>
  <input type="submit" name="submit" value="Gui">
 </form>
